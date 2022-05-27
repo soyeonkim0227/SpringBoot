@@ -15,7 +15,7 @@ import javax.transaction.Transactional;
 public class UserService {
     private  final UserRepository userRepository;
 
-    public void creatUser(CreateUserDto dto) {
+    public void createUser(CreateUserDto dto) {
         userRepository.save(User.builder()
                 .name(dto.getName())
                 .number(dto.getNumber())
